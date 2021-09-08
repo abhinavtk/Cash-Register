@@ -1,0 +1,44 @@
+:root {
+    --primary-color:#4C1D95; 
+    --off-white: #E5E7EB;
+    --button-color: #831843;
+}
+body{
+    display: block;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: auto;
+    padding: 2rem 1rem;
+    color: white;
+    background-color: var(--primary-color)  ;
+    text-align: center;
+}
+
+.label{
+    font-size: 1.3rem;
+    padding: 2rem 1rem 0.5rem;
+    color: whitesmoke;
+}
+.input{
+    display: block;
+    padding: 1rem;
+    height: 5px;
+    width: 90%;
+}
+button{
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem auto 0;
+    background-color: var(--button-color);
+    color: white;
+    font-weight: bold;
+}
+
+div{
+    display: block;
+}
