@@ -5,6 +5,7 @@
 }
 body{
     display: block;
+    box-sizing: border-box;
 }
 .container{
     display: flex;
@@ -21,6 +22,7 @@ body{
     font-size: 1.3rem;
     padding: 2rem 1rem 0.5rem;
     color: whitesmoke;
+    text-align: center;
 }
 .input{
     display: block;
@@ -39,6 +41,25 @@ button{
     font-weight: bold;
 }
 
-div{
-    display: block;
+table {
+    display: table;
+    width: 100%;
+    margin: 1rem 0;
+    table-layout: fixed;
+    padding: 0.2rem;
+    background-color: var(--button-color);
+    border: 2px solid var(--off-white);
+    border-collapse: collapse;
+    
+}
+
+tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
 }

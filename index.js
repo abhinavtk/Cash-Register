@@ -12,7 +12,7 @@ const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 next.style.display = "none";
 message1.style.display = "none";
 check.style.display = "none";
-//checkButton.addEventListener("click", showCheck());
+
 
 function calculateChange(amount){
     for (let i=0; i<availableNotes.length; i++ ){
@@ -57,3 +57,6 @@ function validateCashAndBillAmount(){
         const changeCash = cashGiven.value - billAmount.value;
         calculateChange(changeCash);
 }
+
+nextButton.addEventListener('click', showNext);
+checkButton.addEventListener('click', showCheck);
