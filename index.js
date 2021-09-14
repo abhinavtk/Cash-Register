@@ -27,23 +27,19 @@ function showMessage(msg,msgtxt){
     msg.innerText = msgtxt;
 }
 function showNext(){
-    if (billAmount.value > 0){
+    if (Number(billAmount.value) > 0){
         message1.style.display = "none";
         next.style.display = "block";
         check.style.display = "none";
         nextButton.style.display = "none";
     }
-    /* else if(typeof billAmount.value === 'string') {
-        message1.style.display = "block";
-        message1.innerText = "Invalid Bill Amount - Enter a positive number";
-    } */
     else{
         showMessage(message1,"Invalid Bill Amount");
     }
     
 }
 function showCheck(){
-    if (cashGiven.value >= billAmount.value){
+    if (Number(cashGiven.value) >= Number(billAmount.value)){
         message2.style.display = "none";
         check.style.display = "block";
         validateCashAndBillAmount();
@@ -54,7 +50,7 @@ function showCheck(){
     }
 }
 function validateCashAndBillAmount(){
-        const changeCash = cashGiven.value - billAmount.value;
+        var changeCash = Number(cashGiven.value) - Number(billAmount.value);
         calculateChange(changeCash);
 }
 
