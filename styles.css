@@ -24,6 +24,7 @@ body{
 
 .label{
     font-size: 1.3rem;
+    font-weight: bold;
     padding: 2rem 1rem 0.5rem;
     color: whitesmoke;
     text-align: center;
